@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+</head>
+
+<body>
+    <h1 align="center">Factura</h1>
+    <form>
+        <table align="center" border="1">
+            <thead>
+                <tr>
+                    <th colspan="3" rowspan="5" align="left" style="background-color: pink;">"SUPERMERCADOS LA
+                        VENDEDORA"</th>
+                    <td colspan="2"></td>
+                    <th colspan="2"><input style="border-style: none;" type="date" name="fecha"
+                            placeholder="25/04/2011"></th>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        <label>Nº Fra: </label>
+                        <input style="border-style: none;" type="number" name="numero_factura" placeholder="245600">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="1">
+                        <label>Cliente: </label>
+                    </th>
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="cliente"
+                            placeholder="Juan Francisco Redrován">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="1">
+                        <label>RUC: </label>
+                    </th>
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="number" name="ruc" placeholder="1804562738">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="1">
+                        <label>Dirección: </label>
+                    </th>
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="direccion"
+                            placeholder="Ambato, Av Cevallos">
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>               
+                
+                <tr>
+                    <th colspan="1">CÓDIGO</th>
+                    <th colspan="1">CANTIDAD</th>
+                    <th colspan="3">CONCEPTO</th>
+                    <th colspan="1">PRECIO</th>
+                    <th colspan="1">IMPORTE</th>
+                </tr>
+                <tr>
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="text" name="codi_item1" placeholder="A23">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="cantidad_item1" placeholder="20">
+                    </td>
+
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="concept_item1" placeholder="lapices">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="precio_item1" placeholder="25">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="importe_item1" placeholder="500">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="text" name="codi_item2" placeholder="A45">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="cantidad_item2" placeholder="100">
+                    </td>
+
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="concept_item2" placeholder="Borradores">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="precio_item2" placeholder="10">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="importe_item2" placeholder="1000">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="text" name="codi_item3">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="cantidad_item3">
+                    </td>
+
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="concept_item3">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="precio_item3">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="importe_item3">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="text" name="codi_item4">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="cantidad_item4">
+                    </td>
+
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="concept_item4">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="precio_item4">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="importe_item4">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="text" name="codi_item5">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="cantidad_item5">
+                    </td>
+
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="concept_item5">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="precio_item5">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="importe_item5">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="text" name="codi_item6">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="cantidad_item6">
+                    </td>
+
+                    <td style="border-style: none;" colspan="3">
+                        <input style="border-style: none;" type="text" name="concept_item6">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="precio_item6">
+                    </td>
+
+                    <td style="border-style: none;" colspan="1">
+                        <input style="border-style: none;" type="number" name="importe_item6">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="4" rowspan="4"></td>
+                    <td colspan="2">Importe: </td>
+                    <td colspan="1">1500</td>                    
+                </tr>
+                <tr>
+                    <td colspan="2">Descuento: </td>
+                    <td colspan="1">75</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Base imponible: </td>
+                    <td colspan="1">1425</td>
+                </tr>
+                <tr>
+                    <td colspan="2">I.V.A: </td>
+                    <td colspan="1">228</td>
+                </tr>
+                <tr>
+                    <th colspan="6" rowspan="2">Factura total</th>
+                    <td colspan="1" rowspan="2">1653</td>
+                </tr>
+                <tr></tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
