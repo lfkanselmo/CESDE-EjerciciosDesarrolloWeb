@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="/imagenes/anime.png" type="image/x-icon">
+</head>
+
+<body align="center" style="background-color: lightskyblue;">
+
+    <header>
+        <section align="right">
+
+            <a href="../inicio.html"
+                style="margin: 0 10px; color:red; font-size: 25px; text-decoration: none;">Inicio</a>
+
+            <a href="/paginas/servicio.html"
+                style="margin: 0 10px; color:red; font-size: 25px; text-decoration: none;">Anime</a>
+
+            <a href="/paginas/nosotros.html"
+                style="margin: 0 10px; color:red; font-size: 25px; text-decoration: none;">Nosotros</a>
+        </section>
+
+        <div align="center">
+            <h1>Contactanos</h1>
+            <p style="font-style: italic; width: 50%;"><b>Para contactarse con nosotros rellena el siguiente formulario
+                    por favor</b></p>
+        </div>
+    </header>
+
+    <main>
+        <div style="margin: 50px auto;">
+            <h3>Estamos ubicados aqui: </h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.14200235152!2d-75.56530632436704!3d6.245010193743343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429fb73808ec5%3A0xf07486e3e4cb9719!2sCESDE!5e0!3m2!1ses!2sco!4v1690213685295!5m2!1ses!2sco"
+                width="830" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div style="margin: 50px auto; width: 300px;">
+            <form>
+                <h3> Ingresa tus datos para ser contactado y resolver las dudas sobre un anime</h3>
+
+                <div align="left" style="margin: 20px auto;">
+                    <label> Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required> <br>
+                </div>
+
+                <div align="left" style="margin: 20px auto;">
+                    <label> Email: </label>
+                    <input type="email" name="email" placeholder="ejemplo@dominio.com" required> <br>
+                </div>
+
+                <div align="left" style="margin: 20px auto;">
+                    <label> Animes: </label>
+                    <ul>
+                        <li> <input type="radio" name="anime" value="bleach" checked> Bleach</li>
+                        <li> <input type="radio" name="anime" value="horimiya" >Horimiya</li>
+                        <li> <input type="radio" name="anime" value="jujutsu" >Jujutsu</li>
+                        <li> <input type="radio" name="anime" value="zom100" >Zom 100</li>
+                    </ul>
+                </div>
+
+                <div align="left" tyle="margin: 20px auto;">
+                    <label> Asunto: </label>
+                    <textarea name="asunto" cols="30" rows="10" style="resize: none;"></textarea>
+                </div>
+
+                <div align="left" style="margin: 20px auto;">
+                    <input type="submit" name="enviar">
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
