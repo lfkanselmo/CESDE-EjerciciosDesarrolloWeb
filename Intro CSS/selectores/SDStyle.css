@@ -1,0 +1,64 @@
+body{
+    background-color: beige;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* selector (>) hijo directo */
+div > p {
+    color: purple;
+}
+
+div > span > p{
+    color: blueviolet;
+}
+
+div > span > h2 {
+    color:red
+}
+
+/* selector (espacio) hijo indirecto */
+div p{  
+    color:blueviolet;
+}
+
+/* selectores (+ o ~) adyacentes o hermanos */
+h2 + h3{
+    color: violet;
+}
+
+div + p{
+    color: blue;
+}
+
+div + p + p{
+    color:yellowgreen;
+}
+
+
+div ~ p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* selector (* y ;) */
+
+div > h2,
+span > p,
+div + p + p{
+    color: aqua;
+}
+
+/* selector (*) para seleccionar todo */
+*{
+    text-shadow: 1.5px 2px 2px black;
+}
+
+* p {
+    font-size: 25px;
+}
+
+div * {
+    text-decoration: underline;
+}
+
