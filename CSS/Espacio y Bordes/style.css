@@ -1,0 +1,50 @@
+*{
+    font-size: 20px;
+}
+
+.caja-1,
+.caja-2,
+.caja-3,
+.caja-4{
+    width: 100px;
+    height: 100px;
+    margin: 5rem;
+    text-align: center;
+    align-items: center;
+    border: 5px solid red;
+    
+}
+
+.caja-1{
+    background-color: transparent; 
+    width: 0;
+    height: 0; 
+    border-top:100px solid yellow;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid yellow;
+    border-left: 100px solid yellow;
+    border-radius: 50%;
+}
+
+.caja-2{
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid blue;
+    border-left: 100px solid transparent;
+}
+
+.caja-3{
+    background-color: burlywood;    
+    border-radius: 50%;
+}
+
+.caja-4{
+    background-color: lightgreen;    
+    border-width: 5px;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 25%;
+}
