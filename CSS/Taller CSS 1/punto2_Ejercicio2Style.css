@@ -1,0 +1,21 @@
+/* Combinador de descendencia */
+ul li {
+    list-style-type: square;
+    color: darkgreen;
+  }
+
+  /* Combinador de hermanos adyacentes */
+  h3 + p {
+    font-style: italic;
+  }
+
+  /* Selector de atributo */
+  img[src$=".png"] {
+    border: 2px solid blue;
+  }
+
+  /* Selector de pseudo-clase */
+  input[type="text"]:focus {
+    background-color: lightyellow;
+    outline: none;
+  }

@@ -1,0 +1,22 @@
+/* Combinador de descendencia */
+div p {
+    color: blue;
+    font-size: 16px;
+  }
+
+  /* Combinador de hermanos adyacentes */
+  h2 + h3 {
+    text-decoration: underline;
+  }
+
+  /* Selector de atributo */
+  a[target="_blank"] {
+    color: red;
+    font-weight: bold;
+  }
+
+  /* Selector de pseudo-clase */
+  button:hover {
+    background-color: yellow;
+    color: black;
+  }
