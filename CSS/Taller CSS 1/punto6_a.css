@@ -1,0 +1,11 @@
+
+
+/* ------ Punto 6 - a ------*/
+body > p + p{
+    color: red;
+}
+
+/* ------ Punto 6 - b ------*/
+body > p {
+    font-size: 30px;
+}
