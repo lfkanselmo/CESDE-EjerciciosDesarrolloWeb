@@ -1,0 +1,15 @@
+
+.container{
+    display: flex;
+    justify-self: center;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagen{
+    width: 150px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px 1px black;
+}
