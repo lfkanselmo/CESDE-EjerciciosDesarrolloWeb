@@ -1,0 +1,38 @@
+:root{
+    background-color: lightgrey;
+}
+
+header,
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    height: 15vh;
+}
+
+footer{
+    height: 5vh;
+}
+
+.container_main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80vh;
+}
+
+.central_panel{
+    width: 50%;
+    background-color: gray;
+}
+
+.left_panel,
+.right_panel{
+    background-color: #a5a5a5;
+    width: 25%;
+}
+
