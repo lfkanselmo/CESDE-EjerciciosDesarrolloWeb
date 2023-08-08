@@ -1,0 +1,90 @@
+header,
+.naveg,
+main,
+footer{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0;
+    background-color: lightgrey;
+}
+
+header,
+.naveg,
+footer{
+    height: 40px;
+}
+
+main{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 0 none;
+    background-color: transparent;
+}
+
+main .nav,
+main .center,
+main .aside_section{
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main .nav{
+    width: 20%;
+    margin: 0 10px 0 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+main .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    width: 50%;
+    margin: 0  10px 0 10px;
+    border: 0 none;
+    border-radius: 10px;
+}
+
+main .center_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50%;
+    background-color: rgb(167, 167, 167);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+main .aside_section,
+main .article_section{
+    align-self: flex-end;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: 70%;
+    margin: 10px 10px;
+    background-color: lightgrey;
+
+}
+
+main .aside_lateral{
+    width: 30%;
+    margin: 0 0 0 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+
+
+
+

@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+}
+
+.cabecera,
+.menu,
+.cuerpo,
+.pie{
+    width: 100%;
+    background-color: beige;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cabecera,
+.pie{
+    height: 100px;
+}
+
+.menu{
+    height: 80px;
+}
+
+.cuerpo{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cuerpo .lateral,
+.cuerpo .centro{
+    height: 100%;
+    background-color: lightskyblue;
+    
+}
+
+.cuerpo .lateral{
+    width: 25%;
+    margin: 0 15px 0 0;
+}
+
+.cuerpo .centro{
+    width: 75%;
+    margin: 0 0 15px 0;
+}
