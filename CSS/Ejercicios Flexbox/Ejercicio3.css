@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_head{
+    display: flex;
+    flex-direction: row;
+    background-color: #e8e8e8;
+    padding: 10px;
+}
+
+.container_head > .box1{
+    background-color: white;
+    width: 10%;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.container_head > .box2{
+    background-color: white;
+    width: 80%;
+    height: 50px;
+}
+
+.container_head > .box3{
+    background-color: white;
+    width: 10%;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.container_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_body > .body_head{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.body_head > div{
+    width: 10%;
+    height: 20px;
+    background-color: #e8e8e8;
+}
+
+.body_head > .c1{
+    background-color: #03a9f4;
+}
