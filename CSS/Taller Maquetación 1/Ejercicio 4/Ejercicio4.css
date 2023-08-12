@@ -1,0 +1,236 @@
+:root{
+    --violeta-oscuro:rgba(116,42,112,1);
+    --azul-cielo: rgba(4, 191, 191, 1);
+    --azul-oscuro: rgba(9, 17, 40, 1);
+    --verde: rgba(3, 166, 60, 1);
+    --blanco-marmol: rgba(242, 242, 242, 1);
+    --blanco-marmol-fondos: rgba(242, 242, 242, 0.6);
+    --gris-claro: rgba(178,178,178,1);
+    --image-size: 240px;
+}
+
+body{
+    background: linear-gradient(0deg, rgba(116,42,112,1) 0%, rgba(178,178,178,1) 100%); 
+}
+
+
+
+/*-------- Cabecera --------*/
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--gris-claro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li{
+    margin-right: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--azul-oscuro);
+}
+
+/*-------- Banner principal --------*/
+
+.banner_principal{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/banner.png);
+    background-size: 100%;
+    background-position: 0 -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_principal div{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+.banner_principal > div > h1{
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    color: var(--blanco-marmol);
+}
+
+.banner_principal > div > p,
+.banner_principal > div > a{
+    font-size: 20px;
+    text-align: center;
+    color:var(--blanco-marmol);
+}
+
+.banner_principal > div > a{
+    text-decoration: none;
+    color: var(--blanco-marmol);
+    background-color: var(--azul-cielo);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+/*-------- imagenes flotantes --------*/
+
+.float{
+    display: flex;
+    justify-content: center;
+}
+
+.float > div{
+    display: flex;
+    width: 60%;
+    gap: 30px;
+    justify-content: center;
+    position: absolute;
+    margin-top: -120px;
+}
+
+.float > div > img{
+    width: var(--image-size);
+    height: var(--image-size);
+}
+
+
+/*-------- galeria --------*/
+
+.galery,
+.blog,
+.image_static,
+.testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galery h2,
+.blog h2,
+.image_static h2,
+.testimony h2{
+    font-size: 50px;
+    margin-top: 200px;
+    text-align: center;
+    color: var(--azul-oscuro);
+}
+
+.galery div,
+.blog div,
+.image_static > div,
+.testimony > div{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--blanco-marmol-fondos);
+    justify-content: space-evenly;
+    border-radius: 15px;
+
+}
+
+.galery div figure{
+    margin: 15px;
+}
+
+figure img{
+    width: var(--image-size);
+    height: var(--image-size);
+}
+
+figure figcaption{
+    text-align: center;
+}
+
+/*-------- galeria --------*/
+
+.blog div{
+    justify-content: space-between;
+}
+
+.blog div article{
+    width: 45%;
+    margin: 15px;
+}
+
+.blog div article img{
+    width: 100%;
+}
+
+/*-------- imagenes estaticas --------*/
+
+.image_static > div{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.image_static > div > img{
+    width: var(--image-size);
+    height: var(--image-size);
+    margin: 15px;
+}
+
+/*-------- testimonio --------*/
+
+.testimony > div{
+    flex-wrap: nowrap;
+}
+
+.testimony > div > article{
+    display: flex;
+    align-items: center;
+}
+
+.testimony article figure img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+/*-------- pie de página --------*/
+footer{
+    background-color: var(--violeta-oscuro);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 30px;
+}
+
+footer > div{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer > div > .footer_images{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+footer div img{
+    width: 50px;
+    height: 50px;
+}
+
