@@ -1,0 +1,287 @@
+:root{
+    --light-violet:rgba(98, 103, 217, 1);
+    --deep-blue: rgba(14, 33, 89, 1);
+    --banners-background: rgba(17, 46, 64, 1);
+    --text: rgba(17, 46, 64, 1);
+    --text2:rgba(98, 103, 217, 1);
+    --background:rgba(199, 210, 217, 1);
+    --radius-images: 15px;
+    --radius-moons: 50%;
+    --radius-buttons:25px; 
+    --font-size-text: 20px;
+    --font-size-title: 50px;
+    --font-size-h2: 30px;
+    --font-size-h3: 25px;
+}
+
+body{
+    background-color: var(--background);
+}
+
+h2{
+    font-size: var(--font-size-h2);
+}
+
+h3{
+    font-size: var(--font-size-h3);
+}
+
+/* ------ cabecera ------*/
+
+header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+}
+
+header .logo{
+    width: 110px;
+    height: 110px;
+}
+
+header .logo img{
+    width: 110px;
+}
+
+header > .menu > nav > .menu_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header > .menu > nav > .menu_list > li{
+    list-style: none;
+}
+
+header > .menu > nav > .menu_list > li > a{
+    text-decoration: none;
+    color: var(--text2);
+    margin-left: var(--font-size-text); 
+    font-size: var(--font-size-h2);   
+}
+
+/* ------ banner ------*/
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    background-color: var(--banners-background);
+}
+
+.banner > div{
+    justify-content: start;
+    width: 40%;
+    height: 80%;
+    padding: 30px;
+}
+
+.banner div h1{
+    font-size: var(--font-size-title);
+    color: var(--text2);
+}
+
+.banner div p{
+    font-size: var(--font-size-text);
+    color: var(--text2);
+}
+
+.banner div .button_start{
+    width: 80px;
+    height: 15px;
+    background-color: var(--light-violet);
+    padding: 10px;
+    border-radius: var(--radius-buttons);
+    font-size: var(--font-size-text);
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+/* ------ central ------*/
+
+.central{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.central .left_panel,
+.central .right_panel{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.central > .left_panel > div{
+    width: 100%;
+}
+
+.central > .left_panel > div > img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: var(--radius-buttons);
+}
+
+.central > .left_panel > .explorer_button{
+    padding: 10px 0;
+    background-color: var(--light-violet);
+    border-radius: var(--radius-buttons);
+    text-align: center;
+    font-size: var(--font-size-text);
+    text-decoration: none;
+    color: var(--text);
+}
+
+.central > .right_panel > .monster{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+
+}
+
+.central > .right_panel > .monster > img{
+    width: 240px;
+    border-radius: var(--radius-images);
+}
+
+.central > .right_panel > .monster > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.central > .right_panel > .monster > div > p{
+    text-align: justify;
+    font-size: var(--font-size-text);
+}
+
+/* ------ galeria ------*/
+.gallery{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+
+.gallery > div{
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery > div > .big_img{
+    width: 55%;
+}
+
+.gallery > div > .small_img{
+    width: 35%;
+}
+
+/* ------ lunas ------*/
+
+.moons{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.moons > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.moons > div > figure{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+
+.moons > div > figure > img{
+    width: 240px;
+    border-radius: var(--radius-moons); 
+}
+
+.moons > div > figure > figcaption{
+    text-align: center;
+    font-size: var(--font-size-text);
+    color:var(--text2);
+    margin-top: 5px;
+}
+
+/* ------ pie de página ------*/
+
+footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--banners-background);
+
+}
+
+footer .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 35%;
+    margin-right: 30px;
+}
+
+footer > .social > .social_icons,
+footer > .social > .social_links{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+footer > .social > .social_icons > img{
+    width: 40px;
+    height: 40px;
+}
+
+footer > .social > .social_links > a{
+    text-decoration: none;
+    color: var(--text2);
+}
+
+footer > .footer_text{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer > .footer_text > .paragraph{
+    width: 33%;
+}
+
+footer > .footer_text > .paragraph > h3{
+    color: var(--text2);
+    margin: 0;
+}
+
+footer p{
+    font-size: var(--font-size-text);
+    color: var(--text2);
+    margin: 0;
+}
+
