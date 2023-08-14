@@ -1,0 +1,59 @@
+body{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.saludo,
+.gif,
+.mundo_arde{
+    display: none;
+    
+}
+
+.saludo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+
+.boton,
+label{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.boton:hover, 
+label:hover{
+    transform: scale(1.3);
+    background-color: lightblue;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 2px violet;
+    margin-bottom: 30px;
+}
+
+.boton:hover + .saludo,
+.boton:hover ~ .gif{
+    display: block;
+}
+
+.check_casilla:checked + .mundo_arde{
+    display: block;
+}
+
+.mundo_arde{
+    margin: 50px;
+}

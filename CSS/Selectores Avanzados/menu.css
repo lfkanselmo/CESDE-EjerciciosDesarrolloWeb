@@ -1,0 +1,106 @@
+body{
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo,
+.social{
+    width: 15%;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.menu_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.links ul,
+.social ul,
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    justify-content: flex-start;
+}
+
+.social ul{
+    justify-content: flex-start;
+}
+
+.links ul li,
+.social ul li{
+    margin: 0 30px; 
+    list-style: none;
+}
+
+.links ul li a,
+.social ul li a,
+.logo{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.6s;
+    
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 10px blue;
+}
+
+.links ul li a:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+    font-size: 21px;
+    color: blue;
+}
+
+.links ul li a:hover + ul{
+    display: flex;
+}
+
+.links ul li:nth-child(4) ul{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+}
+
+.links ul li:nth-child(4) ul li{
+    text-align: left;
+}
+
+.social ul li a img:hover{
+    transform: scale(1.2);
+}
+
+.body{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.body img{
+    width: 60%;
+}
+
+.red_icon{
+    width: 50px;
+    height: 50px;
+}
