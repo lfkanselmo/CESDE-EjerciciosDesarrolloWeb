@@ -1,0 +1,93 @@
+body{
+    background-color: beige;
+}
+
+/*---------- selectores seudoclases <de selección> ----------*/
+
+/* Selección de primer hijo */
+p:first-child{
+    background-color: lightcoral;
+}
+
+
+/* Selección de último hijo */
+p:last-child{
+    background-color: lightblue;
+}
+
+/* Selección de dos en dos (n) empezando en el segundo hijo */
+p:nth-child(2n){
+    background-color: lightgreen;
+}
+
+/* Selección de dos en dos (n) empezando en el cuarto hijo */
+p:nth-child(2n+4){
+    background-color: lightsalmon;
+}
+
+/* Selección de impares */
+p:nth-child(odd){
+    font-size: 30px;
+}
+
+/* Selección de pares */
+p:nth-child(even){
+    text-decoration: underline;
+}
+
+/* Selección por tipo */
+p:nth-of-type(n){
+    font-style: italic;
+}
+
+/* Selección del último por tipo*/
+h2:nth-last-of-type(1){
+    font-size: 60px;
+}
+
+/* Seleción excluir, seleciona a todos menos a las etiquetas p*/
+div *:not(p){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* ---------- selectores seudoclases <de estado> ----------*/
+
+div p{
+    background-color: green;
+    transition: 0.3s;
+}
+
+/* realiza lo que está en su scope cuando el cursos pasa encima de este objeto*/
+div p:hover{
+    background-color: blueviolet;
+    font-size: 30px;
+}
+
+/* realiza lo que está en el scope cuando el foco está en a etiqueta - solo para etiquetas de tipo formulario*/
+input:focus{
+    background-color: lightgreen;
+}
+
+/* ---------- selectores seudoelementos ----------*/
+
+/* afecta a la primera letra de los elementos del tipo seleccionado*/
+.div2 p::first-letter{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+
+/* aplica a el elemento de ese tipo cuando se selecciona*/
+.div2 p::selection{
+    background-color: yellow;
+}
+
+/* adicionar cosas antes de la etiqueta */
+h1::before{
+    content: " :) ";
+}
+
+/* adicionar cosas después de la etiqueta */
+h1::after{
+    content: " :( ";
+}
