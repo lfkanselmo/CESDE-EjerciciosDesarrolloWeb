@@ -1,0 +1,13 @@
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo,
+.nav_menu,
+.social{
+    display: flex;    
+}
+
