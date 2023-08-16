@@ -1,13 +1,200 @@
+:root{
+    --background-color: rgba(0, 0, 0, 1);
+    --button-color-salmon: rgb(246, 72, 53);
+    --button-color-yellow: rgba(225, 225, 50, 1);
+    --white-text: rgba(255,255,255,1);
+    --yellow-text: rgba(225, 225, 50, 1);
+    --black-text: rgba(0, 0, 0, 1);
+    --margin-menus: 15px;
+    --button-font-size: 20px;
+    --brush_img_size: 200px;
+    font-family: 'Oswald', sans-serif;
+}
 
+/* -------- GENERAL CONFIGS -------- */
+
+button{
+    color: white;
+    font-size: var(--button-font-size);
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--button-color-salmon);
+    transition: 0.4s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px 1px red;
+    color: var(--yellow-text);
+}
+
+/* -------- HEADER -------- */
+
+/* menu */
 
 .header{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.logo,
-.nav_menu,
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--background-color);
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img{
+    width: 150px;
+    height: 150px;
+}
+
 .social{
-    display: flex;    
+    display: flex; 
+    justify-content: space-between;
 }
 
+.nav_menu ul{
+    display: flex; 
+    flex-direction: row;
+    align-items:center;
+    align-items: center;
+}
+
+.nav_menu ul li{
+    margin: 0 var(--margin-menus);
+    list-style: none;
+    transition: 0.4s;
+}
+
+.nav_menu ul li:hover{
+    margin: 0 var(--margin-menus);
+    list-style: none;
+    transform: scale(1.2);
+}
+
+
+.nav_menu ul li a{
+    text-decoration: none;
+    color: var(--white-text);
+    transition: 0.4s;
+}
+
+.nav_menu ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--button-color-yellow);
+    text-decoration-thickness: 2px;
+}
+
+.social > a{
+    margin: 0 var(--margin-menus);
+}
+
+.social > a > img{
+    width: 50px;
+    height: 50px;
+}
+
+/* -------- CENTRAL BANNER -------- */
+
+/* black banner */
+
+.black_banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.black_banner_content,
+.black_banner_img{
+    width: 45%;
+}
+
+.black_banner_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 150px;
+}
+
+.banner_button{
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.offer_brush_img{
+    width: var(--brush_img_size);
+}
+
+.offer_brush_img{  
+    border: none;
+}
+
+.black_banner_text{
+    text-align: start;
+    width: 80%;
+    color: var(--white-text);
+    font-size: 80px;
+}
+
+.price{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+}
+
+/*----------------*/
+
+.black_banner img{
+   width: 100%; 
+}
+
+
+
+/* white banner */
+.white_banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.burger_vertical,
+.natural_text{
+    display: flex;
+    width: 40%;
+    border: 2px solid black;
+    margin-top: 80px;
+}
+
+/*----------------*/
+
+.natural_text{
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_natural{
+    width: var(--brush_img_size);
+}
+
+.natural_content h2{
+    font-size: 60px;
+}
