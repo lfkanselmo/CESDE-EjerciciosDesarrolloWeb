@@ -8,6 +8,7 @@
     --margin-menus: 15px;
     --button-font-size: 20px;
     --brush_img_size: 200px;
+    --margin-top-banner: 80px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -180,8 +181,7 @@ button:hover{
 .natural_text{
     display: flex;
     width: 40%;
-    border: 2px solid black;
-    margin-top: 80px;
+    margin-top: var(--margin-top-banner);
 }
 
 /*----------------*/
@@ -191,10 +191,111 @@ button:hover{
     align-items: center;
 }
 
-.image_natural{
+.image_natural img{
     width: var(--brush_img_size);
+}
+
+.natural_content{
+    height: 70%;
+    align-items: center;
 }
 
 .natural_content h2{
     font-size: 60px;
+}
+
+.natural_content ul li{
+    margin: 20px 0;
+}
+
+/* -------- GALLERY -------- */
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: var(--margin-top-banner);
+}
+
+.gallery img{
+    width: 30%;
+    border-radius: 15px;
+}
+
+/* -------- MENU PRODUCTS -------- */
+
+.menu_products > div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--margin-top-banner);
+}
+
+.menu_img img{
+    width: var(--brush_img_size);
+}
+
+/*----------------*/
+
+.menu_option{
+    width: 65%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.product{
+    width: 30%;
+}
+
+.product > div > img{
+    width: 80%;
+    border-radius: 15px;
+}
+
+.product > div:nth-child(2){
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product > div:nth-child(2) > p{
+    color: red;
+    font-weight: bold;
+}
+
+/*----------------*/
+
+.menu_button{
+    margin-top: var(--margin-top-banner);
+}
+
+/*----------------*/
+
+.testimonial{
+    display: flex;
+    width: 100%;
+    margin-top: var(--margin-top-banner);
+}
+
+.testimonial div{
+    width: 50%;
+}
+
+.testimonial div:first-child{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.testimonial div:last-child img{
+    width: 100%;
+    height: 100%;
 }
