@@ -273,7 +273,7 @@ button:hover{
     margin-top: var(--margin-top-banner);
 }
 
-/*----------------*/
+/* -------- TESTIMONIAL -------- */
 
 .testimonial{
     display: flex;
@@ -296,6 +296,93 @@ button:hover{
 }
 
 .testimonial div:last-child img{
+    width: 100%;
+    height: 100%;
+}
+
+/* -------- FOLLOW US -------- */
+
+.followUs > div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--margin-top-banner);
+}
+
+.followUs img{
+    width: var(--brush_img_size);
+}
+
+.photos_insta{
+    width: 65%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.photos_insta div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.photos_insta div img{
+    width: 80%;
+    border-radius: 15px;
+}
+
+/* -------- NEWSLETTER -------- */
+
+.newsletter > div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--button-color-salmon);
+    padding: 60px 0;
+}
+
+.newsletter_text,
+.email_box{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter_text{
+    flex-direction: column;
+    justify-content: start;
+}
+
+.email_box > div{
+    width: 50%;
+}
+
+.email_box > div > button{
+    background-color: var(--button-color-yellow);
+}
+
+.email_box > div > button:hover{
+    color: var(--button-color-salmon);
+}
+
+.email_box > div:first-child > input{
+    height: 50px;
+    width: 70%;
+}
+
+/* -------- MAP -------- */
+
+.map{
+    width: 100%;
+    height: 400px;
+}
+
+.map > iframe{
     width: 100%;
     height: 100%;
 }
