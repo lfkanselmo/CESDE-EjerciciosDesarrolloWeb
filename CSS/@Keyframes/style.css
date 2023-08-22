@@ -1,0 +1,115 @@
+.toy1,
+.toy2,
+.toy3,
+.toy4{
+    width: 50px;
+    height: 70px;
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.toy1{
+    background-color: darkblue;
+    animation: race ease 5s;
+}
+
+.toy2{
+    background-color: darkcyan;
+    animation: race ease-in 5s;
+}
+
+.toy3{
+    background-color: darkred;
+    animation: race ease-out 5s;
+}
+
+.toy4{
+    background-color: darkviolet;
+    animation: race ease-in-out 5s;
+}
+
+/*  ANIMATION RULES  */
+@keyframes move {
+    0%{
+        top: 0; left: 0;
+    }
+
+    25%{
+        top: 0; left: 500px;
+        background-color: transparent;
+        color: darkblue;
+        border: darkblue solid 1px;
+    }
+
+    50%{
+        left: 500px ; top: 500px;
+        background-color: transparent;
+        color: darkblue;
+        border: darkblue solid 1px;
+    }
+
+    75%{
+        left: 0; top: 500px;
+        background-color: transparent;
+        color: darkblue;
+        border: darkblue solid 1px;
+    }
+
+    100%{
+        left: 0; top: 0;
+    }
+}
+
+@keyframes move2 {
+    0%{
+        left: 0;
+        top: 0;
+    }
+
+    25%{
+        left: 95%;
+        top: 0;
+        background-color: transparent;
+        color: darkblue;
+        border: darkblue solid 1px;
+    }
+
+    50%{
+        left: 0;
+        top: 500px;
+        background-color: transparent;
+        color: darkblue;
+        border: darkblue solid 1px;
+    }
+
+    75%{
+        left: 95%;
+        top: 500px;
+        background-color: transparent;
+        color: darkblue;
+        border: darkblue solid 1px;
+    }
+
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+/* ANIMACIONES PARA LA CARRERA */
+
+@keyframes race {
+    0%{
+        top: 0; left: 0;
+    }
+
+    100%{
+        top: 0; left: 95%;
+    }
+
+}
