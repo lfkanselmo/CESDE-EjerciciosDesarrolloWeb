@@ -3,6 +3,7 @@
     --button-color-salmon: rgb(246, 72, 53);
     --button-color-yellow: rgba(225, 225, 50, 1);
     --white-text: rgba(255,255,255,1);
+    --grey-text: rgb(141, 141, 141,0.8);
     --yellow-text: rgba(225, 225, 50, 1);
     --black-text: rgba(0, 0, 0, 1);
     --margin-menus: 15px;
@@ -87,7 +88,7 @@ button:hover{
 
 .nav_menu ul li a{
     text-decoration: none;
-    color: var(--white-text);
+    color: var(--grey-text);
     transition: 0.4s;
 }
 
@@ -95,6 +96,7 @@ button:hover{
     text-decoration: underline;
     text-decoration-color: var(--button-color-yellow);
     text-decoration-thickness: 2px;
+    color: var(--white-text);
 }
 
 .social > a{
@@ -385,4 +387,130 @@ button:hover{
 .map > iframe{
     width: 100%;
     height: 100%;
+}
+
+/* -------- INFO SECTION -------- */
+
+.info_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: var(--grey-text);
+}
+
+.info_section h2{
+    color: var(--white-text);
+}
+
+.info_section > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 250px;
+    margin: 50px 0;
+}
+
+.info_section > div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_section > div:first-child > img{
+    width: 150px;
+    height: 150px;
+}
+
+.info_section > div:first-child > p{
+    margin: 0;
+}
+
+.info_section > div > h2{
+    align-self: flex-start;
+}
+
+.info_section > div > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.info_section > div > div img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.info_section div:last-child p{
+    margin: 0;
+    align-self: flex-start;
+}
+
+/* -------- FOOTER -------- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: var(--grey-text);
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+footer h2{
+    color: var(--white-text);
+}
+
+footer div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 84%;
+    align-items: flex-end;
+}
+
+footer div:first-child > div{
+    width: 33%;
+    margin-left: 50px;
+}
+
+footer div:first-child > div:nth-child(3) > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer div:first-child > div:nth-child(2){
+    justify-content: center;
+}
+
+footer div:first-child > div:nth-child(3) > ul li{
+    margin: 0 10px;
+}
+
+footer div:first-child > div:nth-child(3) > ul li a{
+    color: var(--grey-text);
+    text-decoration: none;
+}
+
+footer div:first-child > div:nth-child(3) > ul li a:hover{
+    color: var(--white-text);
+}
+
+footer div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 10%;
+}
+
+footer div:last-child > img{
+    width: 20px;
+    height: 20px;
+    margin: 20px 0;
 }
