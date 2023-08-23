@@ -143,9 +143,6 @@ button:hover{
 
 .offer_brush_img{
     width: var(--brush_img_size);
-}
-
-.offer_brush_img{  
     border: none;
 }
 
@@ -159,9 +156,7 @@ button:hover{
 .price{
     height: 100px;
     width: 100px;
-    position: absolute;
-    right: 20%;
-    bottom: 30%;
+    margin-bottom: 15px;
 }
 
 /*----------------*/
@@ -518,4 +513,213 @@ footer div:last-child > img{
     width: 30px;
     height: 30px;
     margin: 20px 0;
+}
+
+/*------------- RESPONSIVE -------------*/
+
+main{
+    padding: 0 1px;
+}
+
+/* MOBILE STYLE */
+@media (max-width: 560px){
+    .header{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .logo > img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav_menu{
+        margin-bottom: 30px;
+    }
+
+    .nav_menu ul{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav_menu ul li{
+        margin:var(--margin-menus) 0;
+    }
+
+    /*black banner*/
+
+    .black_banner{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .black_banner_content,
+    .black_banner_img{
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .black_banner_text{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .price{
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+    }
+
+    .price img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .banner_button{
+        justify-content: center;
+    }
+
+    /*white banner*/
+
+    .white_banner{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .burger_vertical,
+    .natural_text,
+    .image_natural{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .burger_vertical img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .natural_text div{
+        width: 100%;
+    }
+
+    .natural_content h2,
+    .natural_content p,
+    .natural_content ul,
+    .button_natural{
+        width: 100%;
+        text-align: center;
+    }
+
+    .natural_content ul{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /*gallery*/
+
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .gallery img{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* products menu*/
+
+    .menu_products > div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_products > div > .menu_option{
+        flex-direction: column;
+    }
+
+    .menu_products > div > .menu_option .product{
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu_products > div > .menu_option .product div{
+        margin: 0;
+        width: 100%;
+    }
+
+    /*testimonial*/
+
+    .testimonial{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial div{
+        width: 100%;
+        padding:0;
+    }
+
+    .testimonial div:first-child{
+        padding: 0;
+        align-items: center;
+    }
+
+    .testimonial div p{
+        width: 90%;
+        text-align: center;
+    }
+
+    /*follow us*/
+    .followUs div{
+        align-items: center;
+    }
+
+    .photos_insta{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photos_insta div img{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* newsletter */
+
+    .newsletter > div:first-child{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .email_box,
+    .newsletter_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .email_box div{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
 }
