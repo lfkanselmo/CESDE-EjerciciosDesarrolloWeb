@@ -6,6 +6,7 @@
     --grey-text: rgb(141, 141, 141,0.8);
     --yellow-text: rgba(225, 225, 50, 1);
     --black-text: rgba(0, 0, 0, 1);
+    --box-show-red: rgb(255, 0, 0, 1);
     --margin-menus: 15px;
     --button-font-size: 20px;
     --brush_img_size: 200px;
@@ -33,7 +34,7 @@ h3{
 }    
 
 button{
-    color: white;
+    color: var(--white-text);
     font-size: var(--button-font-size);
     width: 150px;
     height: 50px;
@@ -46,7 +47,7 @@ button{
 
 button:hover{
     transform: scale(1.1);
-    box-shadow: 2px 2px 5px 1px red;
+    box-shadow: 2px 2px 5px 1px var(--box-show-red);
     color: var(--yellow-text);
 }
 
@@ -99,7 +100,7 @@ button:hover{
 .nav_menu ul li:hover{
     margin: 0 var(--margin-menus);
     list-style: none;
-    transform: scale(1.2);
+    transform: scale(1.04);
 }
 
 
@@ -133,7 +134,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: var(--background-color);
     padding-bottom: 50px;
     align-items: center;
 }
@@ -236,6 +237,11 @@ button:hover{
 .gallery img{
     width: 30%;
     border-radius: 15px;
+    transition: 0.4s;
+}
+
+.gallery img:hover{
+    transform: scale(1.02);
 }
 
 /* -------- MENU PRODUCTS -------- */
@@ -261,12 +267,17 @@ button:hover{
 }
 
 .product{
-    width: 30%;
+    width: 24%;
 }
 
 .product > div > img{
     width: 80%;
     border-radius: 15px;
+    transition: 0.4s;
+}
+
+.product > div > img:hover{
+    transform: scale(1.04);
 }
 
 .product > div:nth-child(2){
@@ -278,7 +289,7 @@ button:hover{
 }
 
 .product > div:nth-child(2) > p{
-    color: red;
+    color: var(--box-show-red);
     font-weight: bold;
 }
 
@@ -304,8 +315,8 @@ button:hover{
     padding: 80px;
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--white-text);
     text-align: center;
     justify-content: center;
 }
@@ -346,6 +357,11 @@ button:hover{
 .photos_insta div img{
     width: 80%;
     border-radius: 15px;
+    transition: 0.4s;
+}
+
+.photos_insta div img:hover{
+    transform: scale(1.04);
 }
 
 /* -------- NEWSLETTER -------- */
@@ -407,8 +423,8 @@ button:hover{
 .info_section{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: black;
+    justify-content: space-evenly;
+    background-color: var(--background-color);
     color: var(--grey-text);
 }
 
@@ -423,7 +439,7 @@ button:hover{
     justify-content: flex-start;
     width: 20%;
     height: 250px;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 
 .info_section > div:first-child{
@@ -468,7 +484,7 @@ button:hover{
 footer{
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: var(--background-color);
     color: var(--grey-text);
     justify-content: space-evenly;
     padding: 20px 0;
@@ -585,6 +601,10 @@ main{
 
     .nav_menu ul li{
         margin:var(--margin-menus) 0;
+    }
+
+    .nav_menu ul li:hover{
+        margin: 15px 0;
     }
 
     /*black banner*/
@@ -889,6 +909,9 @@ main{
     .nav_menu ul li{
         margin:var(--margin-menus) 0;
     }
+    .nav_menu ul li:hover{
+        margin: 15px 0;
+    }
 
     /*black banner*/
 
@@ -1151,5 +1174,12 @@ main{
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+}
+
+/* PORTABLE PC STYLE */
+@media (min-width:1025px) and (max-width:1300px){
+    .product{
+        width: 30%;
     }
 }
