@@ -1,0 +1,41 @@
+.pj{
+    width: 114px;
+    height: 170px;
+    background: url(media/walk.png);
+    margin: 0 auto;
+    animation: run 1s steps(7) infinite;
+    position: absolute;
+    left: 50%;
+    bottom: 11%;
+}
+
+.background{
+    width: 100%;
+    height: 797px;
+    background: url(media/background.jpg);
+    position: relative;
+    margin: 0 auto;
+    animation: backgroundAnimation 3s linear infinite;
+}
+
+@keyframes run {
+    0%{
+        
+        background-position: 0px;
+    }
+    
+    100%{
+        background-position: -799px;
+    }
+}
+
+@keyframes backgroundAnimation{
+    0%{
+        
+        background-position: 0px;
+    }
+    
+    100%{
+        background-position: -1416px;
+    }
+}
