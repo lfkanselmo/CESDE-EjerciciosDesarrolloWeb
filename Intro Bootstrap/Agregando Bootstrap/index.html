@@ -18,13 +18,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-dark bg-gradient bg-opacity-50">
-    <h1 class="text-danger"> Titulo con bootstrap </h1>
+<body>
+
+    <div class="container border border-warning my-3">
+        <div class="row">
+            <div class="col border">columna 1</div>
+            <div class="col border">columna 2</div>
+            <div class="col border">columna 3</div>
+            <div class="col border">columna 4</div>
+        </div>
+    </div>
+
+    <div class="container-fluid border border-danger my-3">
+        <div class="row justify-content-evenly">
+            <div class="col-2 border ">columna 1</div>
+            <div class="col-4 border ">columna 2</div>
+            <div class="col-2 border ">columna 3</div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <h1 class="text-danger bg-dark bg-gradient bg-opacity-50"> Titulo con bootstrap </h1>
     <h1> Titulo sin bootstrap </h1>
 
     <p class="text-white">Parrafo 1</p>
     <p class="text-white violet-color">Parrafo 2</p>
-    <p class="text-white">Parrafo 3</p>
+    <p class="border border-danger border-m rounded-3">Parrafo 3</p>
+
+    <div class="d-flex justify-content-center">
+        <div class="bg-danger text-white p-5 w-25 m-5 d-flex justify-content-center">Caja 1</div>
+        <div class="bg-warning text-white p-5 w-25 m-5 d-flex justify-content-center">Caja 2</div>
+        <div class="bg-success text-white p-5 w-25 m-5 d-flex justify-content-center">Caja 3</div>
+    </div>
 
 
     <!-- Script de bootstrap -->

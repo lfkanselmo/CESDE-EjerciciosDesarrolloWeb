@@ -1,3 +1,11 @@
 .violet-color {
   color: violet !important;
 }
+
+.border-xl {
+  border-width: 5px !important;
+}
+
+.border-m {
+    border-width: 3px !important;
+  }
