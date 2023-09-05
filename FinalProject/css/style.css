@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "nasation";
+    src: url(/fonts/nasalization-rg.otf);
+}
+
+.name-page{
+    font-family: "nasation";
+}
+
+.header{
+    background-image: url(/media/header/bgr2.jpg);
+    
+}
