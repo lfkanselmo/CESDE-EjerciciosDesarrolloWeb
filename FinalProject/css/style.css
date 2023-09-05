@@ -1,13 +1,14 @@
-@font-face {
-    font-family: "nasation";
-    src: url(/fonts/nasalization-rg.otf);
+.img-banner{
+    background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(0,0,0,1)), url(/media/header/bgr-header.jpg); 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;   
 }
 
-.name-page{
-    font-family: "nasation";
+.bgr-black{
+    background-color: rgba(0,0,0,1) !important;
 }
 
-.header{
-    background-image: url(/media/header/bgr2.jpg);
-    
+.img-logo{
+    height: 80px;
 }
