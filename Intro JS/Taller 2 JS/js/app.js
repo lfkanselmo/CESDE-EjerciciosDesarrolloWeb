@@ -279,12 +279,12 @@ function punto7() {
     // Convertir la cadena de fecha de nacimiento a un objeto Date
     let fechaNacimiento = new Date(fechaNacimientoString);
 
-    //Variable final para la edad
+    //  Variable final para la edad
     let edad;
 
     // Verificar si la entrada del usuario es una fecha válida
     if (isNaN(fechaNacimiento)) {
-        console.log("Fecha de nacimiento inválida");
+        alert("Fecha de nacimiento inválida");
     } else {
         // Fecha actual
         let fechaActual = new Date();
