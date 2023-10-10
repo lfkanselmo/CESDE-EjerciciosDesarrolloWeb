@@ -1,4 +1,4 @@
-/*
+
 
 // Declarar objeto
 var verduras = {
@@ -68,7 +68,7 @@ for (let j = 0; j < cantidad; j++) {
     document.write("<hr>");
 };
 
-*/
+
 
 // Objetos dentro de arreglos
 var productos = {
