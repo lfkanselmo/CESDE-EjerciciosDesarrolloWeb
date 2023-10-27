@@ -1,0 +1,15 @@
+.color{
+    color: blue;    
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+.cumplido{
+    background-color: greenyellow;
+}
+
+.fallido{
+    background-color: red;
+}
