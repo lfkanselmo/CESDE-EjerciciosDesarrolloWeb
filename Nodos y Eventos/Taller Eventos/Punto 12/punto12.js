@@ -19,7 +19,7 @@ function crearTarea() {
         let fila = document.createElement("tr");
         fila.innerHTML = `
     <td> ${campoTexto.value} </td>
-    <td> <span> 📝 </span> </td>
+    <td> <span onclick="editarTarea(this)"> 📝 </span> </td>
     <td> <span onclick="eliminarTarea(this)"> ❌ </span> </td>
     `;
 
@@ -28,6 +28,11 @@ function crearTarea() {
     } else {
         alert("Tarea vacía")
     }
+}
+
+function editarTarea(btn){
+    let tarea = btn.parentElement.parentElement;
+    
 }
 
 function eliminarTarea(btn) {
