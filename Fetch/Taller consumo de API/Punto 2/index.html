@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Punto 2: Weather</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="colorBg col-md-8 col-lg-6 col-xl-4 rounded text-white">
+          <h3 class="mb-4 pb-2 fw-normal title justify-content-center">Consulta temperatura actual</h3>
+
+          <div class="input-group rounded mb-3">
+            <input type="search" class="cityInput form-control rounded" placeholder="Ciudad" aria-label="Search"
+              aria-describedby="search-addon" />
+            <a href="#!" type="button">
+              <div class="btnBuscar btn btn-success mx-3 input-group-text" id="search-addon">
+                Buscar
+              </div>
+            </a>
+          </div>
+
+          <div class="selectMenu d-flex flex-column input-group rounded mb-3">
+            <select name="" id="country">
+              <option disabled selected value="">Selecciona el país</option>
+              <option value="AR">Argentina</option>
+              <option value="CO">Colombia</option>
+              <option value="CR">Costa Rica</option>
+              <option value="ES">España</option>
+              <option value="US">Estados Unidos</option>
+              <option value="MX">México</option>
+              <option value="PE">Perú</option>
+            </select>
+          </div>
+
+          <div class="card result shadow-0 border colorBg mb-4">
+            <!-- 
+                <div class="card-body showTemp p-4">
+                  <h4 class="cityText mb-1 sfw-normal">-------</h4>
+                  <h5 class="countryText mb-1 sfw-normal">----</h5>
+                  <p class="mb-2">Temperatura actual: <strong class="temperature">-°C</strong></p>
+      
+                  <div class="d-flex flex-row align-items-center">
+                    <p class="mb-0 me-4">----------------</p>
+                    <i class="fas fa-cloud fa-3x" style="color: #eee;"></i>
+                  </div>
+      
+                </div>
+
+                -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

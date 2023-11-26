@@ -1,0 +1,13 @@
+body{
+    background-color: beige !important;
+}
+
+.alert-message {
+    margin: 24px 0 0;
+    color: red!important;
+}
+
+.colorBg{
+    background-color: darkslategray !important;
+    border: none;
+}
