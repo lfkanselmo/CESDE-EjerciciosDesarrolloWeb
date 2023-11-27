@@ -6,8 +6,8 @@ let title = document.querySelector(".title");
 
 // Event click on button buscar
 btnBuscar.addEventListener("click", ()=>{
-    if(cityInput.value === '' || countrySelect.value === ''){
-        showError("Ambos campos son obligatorios");
+    if(cityInput.value === ''){
+        showError("Debe ingresar una ciudad");
     }
 
     apiCall(cityInput.value, countrySelect.value);

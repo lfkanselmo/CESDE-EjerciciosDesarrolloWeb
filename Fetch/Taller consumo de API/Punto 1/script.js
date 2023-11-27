@@ -1,7 +1,7 @@
 // Globales
 let url = "https://jsonplaceholder.typicode.com/photos";
 let fotos = [];
-let numeroFotos = 16;
+let numeroFotos = 40;
 let contenedorFotos = document.querySelector(".photos");
 
 fetch(url)
