@@ -2,8 +2,43 @@ let btn = document.querySelector(".btn");
 let respuesta = document.querySelector(".respuesta");
 let tabla = document.querySelector(".registros tbody");
 let btnGuardar = document.querySelector(".btn-guardar");
+let clientInput = document.querySelector(".cliente");
+let platilloInput = document.querySelector(".platillo");
+let precioInput = document.querySelector(".precio");
+let cantidadInput = document.querySelector(".cantidad");
+let observacionInput = document.querySelector(".observacion");
+let imagenInput = document.querySelector(".imagen");
+
+btnGuardar.addEventListener("click", ()=>{
+    let pedido = datosForm();
+    if(pedido.length != 0){
+        enviarPedido(pedido);
+    }
+});
 
 peticionBD();
+
+function datosForm(){
+    if(
+    clientInput.value == "" || 
+    platilloInput.value == "" ||
+    cantidadInput.value == "" ||
+    precioInput.value == "" ||
+    observacionInput.value == ""
+    ){
+        alert("todos los campos son obligatorios");
+    }
+    let datos = {
+        platillo: platilloInput.value,
+        cliente: clientInput.value,
+        precio: precioInput.value,
+        cantidad: cantidadInput.value,
+        observacion: observacionInput.value
+    }
+
+    console.log("datos formulario: " + JSON.stringify(datos));
+    return datos;
+}
 
 async function peticionBD() {
     let url = "http://localhost/apiRestaurante/";
